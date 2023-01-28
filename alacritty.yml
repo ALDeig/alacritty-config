@@ -3,6 +3,7 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
+draw_bold_text_with_bright_colors: true
 env:
   # TERM variable
   #
@@ -45,7 +46,8 @@ window:
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
   opacity: 0.92
-  # opacity: 0.80
+  # opacity: 0.95
+  # opacity: 1
 
   # Window decorations
   #
@@ -116,7 +118,9 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Source Code Pro
+    # family: Source Code Pro
+    # family: 3270 Nerd Font
+    family: CaskaydiaCove Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -135,7 +139,8 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    # family: Source Code Pro
+    family: CaskaydiaCove Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -154,7 +159,8 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    # family: Source Code Pro
+    family: CaskaydiaCove Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -173,7 +179,8 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    # family: Source Code Pro
+    family: CaskaydiaCove Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -346,6 +353,7 @@ schemes:
     # Default colors
     primary:
       background: '#2D2A2E'
+      # background: '#000000'
       foreground: '#FCFCFA'
 
     # Normal colors
@@ -867,8 +875,8 @@ key_bindings:
   - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
-  # my 
-  - { key: N, mods: Control, action: SpawnNewInstance }
+  # my
+  - { key: N, mods: Control|Shift, action: SpawnNewInstance }
   - { key: Space, mods: Alt, chars: " " }
   - { key: Back, mods: Super, chars: "\x15" } # delete word/line
   - { key: Left, mods: Alt, chars: "\x1bb" } # one word left
@@ -876,5 +884,5 @@ key_bindings:
   - { key: Left, mods: Control, chars: "\x1bOH", mode: AppCursor } # Home
   - { key: Right, mods: Control, chars: "\x1bOF", mode: AppCursor } # End
   - { key: R, mods: Control, chars: "\x1bR" }
-
-
+  
+  
