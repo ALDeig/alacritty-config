@@ -1,0 +1,41 @@
+# import = ["~/.config/alacritty/colorschemes/catppuccin/catppuccin-mocha.toml",]
+import = ["~/.config/alacritty/colorschemes/tokyonight/tokyonight_night.toml",]
+
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.93
+blur = false
+dynamic_title = true
+
+[window.padding]
+x = 25
+y = 20
+
+[font]
+size = 12.0
+normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}
+bold = {family = "JetBrainsMono Nerd Font", style = "Bold"}
+italic = {family = "JetBrainsMono Nerd Font", style = "Italic"}
+bold_italic = {family = "JetBrainsMono Nerd Font", style = "Bold Italic"}
+
+[bell]
+animation = "EaseOut"
+# duration = 1
+
+[selection]
+save_to_clipboard = true
+
+# keyboard actions: ToggleSimpleFullscreen, CreateNewWindow
+
+[keyboard]
+# window actions: ToggleSimpleFullscreen, ToggleMaximized, ToggleFullscreen
+bindings = [
+    { key = "F10",  action = "ToggleMaximized" },
+    { key = "F9",  action = "ToggleFullscreen" },
+]
