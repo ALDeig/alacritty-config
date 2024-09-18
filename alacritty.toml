@@ -1,5 +1,5 @@
-# import = ["~/.config/alacritty/colorschemes/catppuccin/catppuccin-mocha.toml",]
-import = ["~/.config/alacritty/colorschemes/tokyonight/tokyonight_night.toml",]
+import = ["~/.config/alacritty/colorschemes/catppuccin/catppuccin-frappe.toml",]
+# import = ["~/.config/alacritty/colorschemes/tokyonight/tokyonight_day.toml",]
 
 live_config_reload = true
 
