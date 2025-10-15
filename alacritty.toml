@@ -1,5 +1,5 @@
-import = ["~/.config/alacritty/colorschemes/catppuccin/catppuccin-frappe.toml",]
-# import = ["~/.config/alacritty/colorschemes/tokyonight/tokyonight_day.toml",]
+[general]
+import = ["~/.config/alacritty/colorschemes/kanagawa/dragon.toml",]
 
 live_config_reload = true
 
@@ -12,6 +12,7 @@ dynamic_padding = false
 opacity = 0.93
 blur = false
 dynamic_title = true
+option_as_alt = "Both"
 
 [window.padding]
 x = 25
